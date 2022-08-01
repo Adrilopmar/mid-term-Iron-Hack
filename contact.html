@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
         <!--                       -------link local stylesheet           -->
-        <link rel="stylesheet" href="styles/contact-styles.css" />
+        <link rel="stylesheet" href="styles/contact-styles.css">
         <!--                      --------link tailwind css                -->
         <script src="https://cdn.tailwindcss.com"></script>
         <!--                      --------google fonts                     -->
@@ -39,21 +39,29 @@
       </div>
     </header>
     <section class="w-full ">
-      <div class="w-4/5 my-auto flex flex-col mx-auto">
-        <h2 class="text-5xl font-bold">Contact Us</h2>
-      <form action="none">
-        <label for="name">Full Name *</label>
-        <input type="text" id="name" placeholder="Enter your full name" />
-        <label for="mail">Email</label>
-        <input type="mail" id="mail" placeholder="Enter your email" />
-        <label for="phone">Phone</label>
-        <input type="text" id="phone" placeholder="Enter your phone" />
-        <label for="message">Message *</label>
-        <textarea
+      <div class="w-4/5 mx-auto mt-36 ">
+        <h2 class="mb-5 standard-title title-contact">Contact Us</h2>
+      <form class="" action="none">
+        <label class="label-contact-form" for="name">Full Name *</label>
+        <input class="w-full input-form" type="text" id="name" placeholder="Enter your full name" />
+        <div class=" flex gap-6 mb-5">
+          <div class="mail-container flex flex-col w-1/2">
+            <label class="label-contact-form" for="mail">Email</label>
+            <input class="w-full input-form" type="mail" id="mail" placeholder="Enter your email" />
+          </div>
+          <div class="phone-container flex flex-col w-1/2">
+            <label class="label-contact-form" for="phone">Phone</label>
+            <input class="w-full input-form" type="text" id="phone" placeholder="Enter your phone" />
+          </div>
+        </div>
+
+        <label class="label-contact-form" for="message">Message *</label>
+        <textarea class="w-full input-form"
           name="clientMessage"
           id="message"
           placeholder="Write your message here ..."
         ></textarea>
+        <button class="w-full mt-5 btn-contact">Submit</button>
       </form>
 
       </div>

@@ -17,11 +17,17 @@
 }
 a{
     text-decoration: none;
-    color: #6b708d;
+    color: var(--standard-text);
 }
 body{
     background-color: #f2f4fc;
     margin: 0;
+}
+.standard-title{
+    
+    font-weight: bolder;
+    margin-bottom: 70px;
+    color: var(--main-title);
 }
 /* ------------------------------------------- nav styles*/
 .nav-container{
@@ -77,3 +83,28 @@ font-size: 1rem;
     background-color:var(--standard-link) ;
 }
 /* ------------------------------------------- contact form styles*/
+.title-contact{
+    font-size: 4rem;
+}
+.input-form{
+    padding: 1.2rem;
+    background-color: rgba(107, 112, 141, 0.1);
+}
+.label-contact-form{
+    font-size: 1.2rem;
+    margin: 1.5rem 0 0.5rem 0;
+}
+textarea{
+    height: 250px;
+}
+.btn-contact{
+    background-color: var(--standard-link);
+    color: var(--light-text);
+    padding: 1.5rem;
+}
+.btn-contact:hover{
+    background-color: #292e47;
+}
+.input-form:focus-visible , textarea:focus-visible{
+outline: none;
+}
