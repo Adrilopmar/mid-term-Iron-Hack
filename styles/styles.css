@@ -1,0 +1,245 @@
+/*background #292E47*/
+/* ---------------------------------------------- general styles*/
+*{
+    font-family: 'Roboto', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #6b708d;
+}
+body{
+    background-color: #f2f4fc;
+    margin: 0;
+}
+.standard-title{
+    font-size: 40px ;
+    margin-left: 100px;
+    font-weight: bolder;
+    margin-bottom: 100px;
+}
+/* ------------------------------------------- general pseudo elements*/
+.contact-btn:hover{
+    background-color: #292e47;
+}
+/* ------------------------------------------- nav styles*/
+.nav-container{
+    margin: 70px;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.logo-img{
+    width: 60px;
+}
+.nav-links-container > ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:2rem;
+    
+}
+.nav-links-container a{
+font-weight:bold ;
+font-size: 1rem;
+}
+.contact-btn{
+    padding: 1rem 2rem;
+    color: #fff;
+    background-color:#072ac8 ;
+}
+/* --------------------------------------------- nav pseudo selectors*/
+.nav-links-container a:hover{
+    color:#072ac8;
+}
+.nav-links-container a:current {
+    color:#0082f3
+}
+/* --------------------------------------------- main section information*/
+.main-info{
+    display: flex;
+    justify-content: center;
+    padding: 100px 70px 0 70px
+}
+.main-text{
+    width: 48%;
+    font-size: 14px;
+}
+.main-info >img{
+    width: 48%;
+}
+.main-title{
+    font-size: 60px;
+    font-weight: bolder;
+    color:#292e47;
+}
+ .main-text p{
+    font-weight: lighter;
+    color: #6b708d;
+    font-size: 20px;
+    margin: 0px 40px 40px 0;
+    max-width: 435px;
+} 
+
+.container-main-link a{
+    font-size: 17px;
+    font-weight: 400;
+}
+.main-link{
+    margin-left: 15px;
+}
+.container-main-link{
+    width: 100%;
+}
+.main-partners-logo{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 150px;
+}
+/* ----------------------------------------------- projects section */
+.projects-section{
+    margin: 200px 0;
+}
+.container-cards{
+    display: flex;
+    justify-content: center;
+    gap:3rem;
+}
+.card img{
+    width: 340px;
+}
+.card{
+    background: #fff;
+    width: 340px;
+}
+.card-info{
+    margin: auto auto 40px 20px;
+}
+.card-info h4{
+    font-size: 24px;
+    font-weight: bolder;
+}
+.container-card-text{
+    margin-top: 0;
+    margin-bottom: 50px;
+    text-justify: auto;
+}
+.card-info a{
+    color: #072ac8;
+    font-weight: bold;
+}
+/* --------------------------------------- client opinion section */
+.clients-section{
+    background: #292e47;
+    padding: 10px 0;
+    height: 600px;
+    width: 100%;
+    margin: 200px 0;
+}
+.sticker-face{
+    position: relative;
+}
+.sticker-face>img{
+    height: 150px;
+    position: absolute;
+}
+.client-title{
+    color: #fff;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 40px;
+    font-weight: bold;
+}
+.client-text{
+    color: #ffc600;
+    font-size: 24px;
+    font-weight: bold;
+    text-align:center ;
+    width: 560px;
+    margin: 150px auto;
+}
+.BookingGirl{
+    text-align: center;
+}
+.BookingGirl>img{
+    width: 170px;
+
+}
+/* --------------------------------------------- relatives icons faces*/
+.happyGirl1 img{
+    left:150px;
+    top: 70px;
+}
+.happyGirl2 img{
+    right: 150px;
+    top:70px;
+}
+.happyBoy1 img{
+    bottom:0;
+    left:150px;
+}
+.happyBoy2 img{
+    bottom:0px;
+    right: 150px;
+}
+/* -----------------------------------Services section styles */
+.services-section img{
+    width: 80px;
+    margin: 30px 0 0 30px;
+}
+/* ------------------------------------  */
+.newsletter-section{
+    background: #ffc600;
+    padding-top: 100px;
+}
+.newsletter-title{
+    text-align: center;
+    font-size: 40px;
+    color: #292e47;
+    font-weight: bold;
+}
+.newsletter-text{
+    text-align: center;
+    color:#6b708d;
+}
+form{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap:1rem;
+    width: 400px;
+    margin: auto;
+}
+.input-container-newsletter{
+    height: 80px;
+    background: #fff;
+    display: flex;
+}
+
+.input-container-newsletter>input{
+    box-sizing: border-box;
+    border: none;
+    height: 80px;
+    width: 350px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.input-container-newsletter>input:focus-visible{
+    outline: none;
+}
+
+.input-container-newsletter>img{
+    width: 30px;
+    height: 30px;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+form button{
+    background:#072ac8 ;
+    color: #fff;
+    border: none;
+    width:180px;
+    padding: 32px;
+}
