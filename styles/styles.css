@@ -127,16 +127,19 @@ font-size: 1rem;
 } */
 .card{
     background:var(--light-bg);
+    
    
 }
 .card-info{
     margin: auto auto 40px 20px;
+    padding:10px;
 }
  .card-info h4{
     /* font-size: 24px;
     font-weight: bolder;
     */
     color: var(--main-title);
+    
 } 
 /*
 .container-card-text{
@@ -175,9 +178,9 @@ font-size: 1rem;
 .client-text{
     color:var(--golden-text) ;
     /* font-size: 24px;
+    width: 560px;
     font-weight: bold;
     text-align:center ;
-    width: 560px;
     margin: 150px auto; */
 }
 /*
