@@ -9,6 +9,7 @@
     --light-text:#fff;
     --dark-bg:#292e47;
     --golden-text:#ffc600;
+    --golden-bg:#ffc600;
 }
 
 
@@ -212,54 +213,62 @@ font-size: 1rem;
 }
 /* ------------------------------------  */
 .newsletter-section{
-    background: #ffc600;
-    padding-top: 100px;
+    background: var(--golden-bg);
+    /* padding-top: 100px; */
+    height: 500px;
 }
-.newsletter-title{
-    text-align: center;
-    font-size: 40px;
-    color: #292e47;
-    font-weight: bold;
+ .newsletter-title{ 
+     color: var(--main-title);
+    /* text-align: center; */
+    /* font-size: 40px; */
+    /* font-weight: bold; */
 }
+/*
 .newsletter-text{
     text-align: center;
     color:#6b708d;
-}
+}*/
 form{
-    display: flex;
+    position: relative;
+    /* display: flex;
     justify-content: center;
     flex-direction: row;
     gap:1rem;
     width: 400px;
-    margin: auto;
-}
+    margin: auto; */
+}/*
 .input-container-newsletter{
     height: 80px;
     background: #fff;
     display: flex;
 }
-
-.input-container-newsletter>input{
-    box-sizing: border-box;
+*/
+form>input{
+    padding-left:5rem;
+    /* box-sizing: border-box;
     border: none;
     height: 80px;
     width: 350px;
     box-sizing: border-box;
-    font-size: 14px;
-}
-.input-container-newsletter>input:focus-visible{
-    outline: none;
+    font-size: 14px; */
 }
 
-.input-container-newsletter>img{
-    width: 30px;
+form >input:focus-visible{
+    outline:1px solid #3898EC;
+} 
+form >input:placeholder-shown{
+    font-size: 1.2rem;
+} 
+
+form>img{
     height: 30px;
-    margin-top: 25px;
-    margin-left: 25px;
+    position: absolute;
+    top: 27px;;
+    left:12%;
 }
 form button{
-    background:#072ac8 ;
-    color: #fff;
+    background:var(--standard-link) ;
+    color:var(--light-text);
     border: none;
     width:180px;
     padding: 32px;
