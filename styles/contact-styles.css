@@ -29,6 +29,16 @@ body{
     margin-bottom: 70px;
     color: var(--main-title);
 }
+/* --------------------------------------------- nav pseudo selectors*/
+.contact-btn:hover{
+    background-color: #292e47;
+}
+.nav-links-container a:hover{
+    color:var(--standard-link);
+}
+.nav-links-container a:current {
+    color:#0082f3
+}
 /* ------------------------------------------- nav styles*/
 .nav-container{
     margin: 70px;
@@ -107,4 +117,9 @@ textarea{
 }
 .input-form:focus-visible , textarea:focus-visible{
 outline: none;
+}
+
+/* -------------------------------------------footer section styles*/
+footer a{
+    color: var(--standard-link);
 }

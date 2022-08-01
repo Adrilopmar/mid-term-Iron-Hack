@@ -290,3 +290,7 @@ form button{
     width:180px;
     padding: 32px;
 }
+/* --------------------------------------------- footer section*/
+footer a{
+    color: var(--standard-link);
+}
