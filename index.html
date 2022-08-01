@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Circle Clone</title>
+    <!--                       -------link local stylesheet           -->
     <link rel="stylesheet" href="styles/styles.css" />
+    <!--                      --------link tailwind css                -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--                      --------google fonts                     -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,6 +19,7 @@
   </head>
   <body>
     <header>
+      <!--                             --------nav bar               -->
       <div class="nav-container">
         <a href="index.html">
           <img
@@ -33,26 +38,28 @@
         <a class="contact-btn" href="contact.html">Contact Us</a>
       </div>
     </header>
-    <!-- main Section -->
+    <!--                              -----main Section                     -->
     <section>
-      <div class="main-info">
-        <div class="main-text">
-          <h1 class="main-title">
+      <div class="main-info flex justify-center mx-auto  w-11/12">
+        <div class="main-text my-auto w-2/4">
+          <h1 class="main-title text-6xl mb-12 ml-auto">
             Empower Your Business With Stunning Design!
           </h1>
-          <p>
+          <p class="text-2xl">
             Circle is a digital design and development studio. We design and
             develop astonishing websites and mobile apps.
           </p>
 
-          <div class="container-main-link">
-            <a class="" href="#">See our work</a>
+          <div class="container-main-link justify-start flex">
+            <a class="my-auto mr-12" href="#">See our work</a>
             <a class="main-link contact-btn" href="#">Get in touch</a>
           </div>
         </div>
-        <img src="/assets/img/Hero Image.png" alt="happyCostumer" />
+        <div class="w-2/4">
+          <img class="w-full" src="/assets/img/Hero Image.png" alt="happyCostumer" />
+        </div>
       </div>
-      <ul class="main-partners-logo">
+      <ul class="main-partners-logo flex justify-between mx-auto mt-32 w-4/5">
         <li><img src="/assets/img/airbnb-logo.svg" alt="airBndBLogo" /></li>
         <li><img src="/assets/img/google-logo.svg" alt="GoogleLogo" /></li>
         <li>
@@ -62,43 +69,47 @@
         <li><img src="/assets/img/amazon-logo.svg" alt="Amazon" /></li>
       </ul>
     </section>
-    <!-- projects section -->
+    <!--                    -------projects section                   -->
     <section class="projects-section">
-      <h2 class="standard-title">Recent Projects</h2>
-      <div class="container-cards">
-        <div class="card">
+      <div class="w-4/5 flex flex-col mx-auto">
+        <h2 class="standard-title">Recent Projects</h2>
+      <div class="flex justify-center gap-9">
+        <div class="card " >
           <img src="/assets/img/Rectangle 1.png" alt="imageSquares" />
           <div class="card-info">
-            <h4>Simplify</h4>
-            <p class="container-card-text">UI Design & App Development</p>
+            <h4 class="text-2xl font-bold my-5">Simplify</h4>
+            <p class="container-card-text mb-5">UI Design & App Development</p>
             <div>
-              <a href="">Learn More</a>
+              <a href="" class="font-bold ">Learn More</a>
             </div>
           </div>
         </div>
-        <div class="card">
+        <div class="card ">
           <img src="/assets/img/Rectangle 2.png" alt="imageSquares" />
           <div class="card-info">
-            <h4>Dashcoin</h4>
-            <p class="container-card-text">Web Development</p>
+            <h4 class="text-2xl font-bold my-5">Dashcoin</h4>
+            <p class="container-card-text mb-5">Web Development</p>
             <div>
-              <a href="">Learn More</a>
+              <a href="" class="font-bold ">Learn More</a>
             </div>
           </div>
         </div>
-        <div class="card">
+        <div class="card ">
           <img src="/assets/img/Rectangle 3.png" alt="imageSquares" />
           <div class="card-info">
-            <h4>Vectorify</h4>
-            <p class="container-card-text">User Experience Design</p>
+            <h4 class="text-2xl font-bold my-5">Vectorify</h4>
+            <p class="container-card-text mb-5">User Experience Design</p>
             <div>
-              <a href="">Learn More</a>
+              <a href="" class="font-bold ">Learn More</a>
             </div>
           </div>
         </div>
       </div>
+      </div>
+      
+      
     </section>
-    <!-- client opinion section -->
+    <!--              ------------Client opinion section                 -->
     <section class="clients-section">
       <div class="sticker-face happyGirl1">
         <img src="/assets/img/Kim.png" alt="happyGirl1" />
@@ -125,7 +136,7 @@
         </div>
       </div>
     </section>
-    <!-- Services Section -->
+    <!--                        -----------Services Section                 -->
     <section class="services-section">
       <h2 class="standard-title">Our Services</h2>
       <div class="container-cards">
