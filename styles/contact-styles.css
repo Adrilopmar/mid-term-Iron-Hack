@@ -1,0 +1,79 @@
+:root{
+    --main-title: #292e47;
+    --standard-text: #6b708d;
+    --standard-link: #072ac8;
+    --light-bg:#fff;
+    --light-text:#fff;
+    --dark-bg:#292e47;
+    --golden-text:#ffc600;
+    --golden-bg:#ffc600;
+}
+
+
+*{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: var(--standard-text);
+}
+a{
+    text-decoration: none;
+    color: #6b708d;
+}
+body{
+    background-color: #f2f4fc;
+    margin: 0;
+}
+/* ------------------------------------------- nav styles*/
+.nav-container{
+    margin: 70px;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.logo-img{
+    width: 60px;
+}
+.nav-links-container > ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:2rem;
+    
+}
+.nav-links-container a{
+font-weight:bold ;
+font-size: 1rem;
+}
+.contact-btn{
+    padding: 1rem 2rem;
+    color: var(--light-text);
+    background-color:var(--standard-link) ;
+}/* ------------------------------------------- nav styles*/
+.nav-container{
+    margin: 70px;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.logo-img{
+    width: 60px;
+}
+.nav-links-container > ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:2rem;
+    
+}
+.nav-links-container a{
+font-weight:bold ;
+font-size: 1rem;
+}
+.contact-btn{
+    padding: 1rem 2rem;
+    color: var(--light-text);
+    background-color:var(--standard-link) ;
+}
+/* ------------------------------------------- contact form styles*/

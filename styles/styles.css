@@ -96,6 +96,23 @@ font-size: 1rem;
     font-size: 20px;
     max-width: 435px; */
 } 
+/*                              ----------- absolute images  */
+.main-container-img{
+    position: relative;
+}
+.main-card-img{
+    position: absolute;
+}
+.main-card-img1{
+left: -15%;
+}
+.main-card-img2{
+bottom: -25%;
+right: -15%;
+
+}
+
+
 /*
 .container-main-link a{
     font-size: 17px;
