@@ -10,6 +10,9 @@
   --golden-text: #ffc600;
   --golden-bg: #ffc600;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 * {
   font-family: "Roboto", sans-serif;
@@ -72,7 +75,7 @@ body {
   padding: 100px 70px 0 70px;
 }
 .main-text {
-  width: 48%;
+  width: 45%;
 }
 
 .main-title {
@@ -160,7 +163,7 @@ body {
   width: 80px;
   margin: 30px 0 0 30px;
 }
-/* ------------------------------------  */
+/* ------------------------------------ Newsletter Section Styles */
 .newsletter-section {
   background: var(--golden-bg);
   height: 500px;
@@ -168,7 +171,11 @@ body {
 .newsletter-title {
   color: var(--main-title);
 }
-
+.submission-recieved{
+    background-color: #dddddd;
+    color: var(--standard-text);
+    padding: 1.2rem;
+}
 form {
   position: relative;
 }
@@ -189,7 +196,7 @@ form > img {
   height: 30px;
   position: absolute;
   top: 27px;
-  left: 12%;
+  left: 7%;
 }
 form button {
   min-height: 88px;

@@ -31,8 +31,8 @@
         <nav class="nav-links-container my-auto">
           <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Services</a></li>
+            <li><a href="#projectSection">Projects</a></li>
+            <li><a href="#serviceSection">Services</a></li>
           </ul>
         </nav>
         <a class="contact-btn" href="contact.html">Contact Us</a>
@@ -45,7 +45,7 @@
       >
         <div class="main-text my-auto w-full lg:w-2/4">
           <h1
-            class="main-title text-5xl mb-12 ml-auto text-center lg:text-start justify-center"
+            class="main-title text-5xl mb-12 w-11/12 text-center lg:text-start justify-center"
           >
             Empower Your Business With Stunning Design!
           </h1>
@@ -57,8 +57,8 @@
           <div
             class="container-main-link justify-start flex justify-center lg:justify-start"
           >
-            <a class="my-auto mr-12 order-2" href="#">See our work</a>
-            <a class="contact-btn lg:order-3 mr-12" href="#">Get in touch</a>
+            <a class="my-auto mr-12 order-2" href="#projectSection">See our work</a>
+            <a class="contact-btn lg:order-3 mr-12" href="contact.html">Get in touch</a>
           </div>
         </div>
         <div class="w-full lg:w-2/4 main-container-img">
@@ -120,7 +120,7 @@
       </ul>
     </section>
     <!--                    -------projects section                   -->
-    <section class="mt-12 lg:mt-24">
+    <section id="projectSection" class="mt-12 lg:mt-24">
       <div class="w-4/5 flex flex-col mx-auto">
         <h2 class="standard-title">Recent Projects</h2>
         <div
@@ -132,7 +132,7 @@
               <h4 class="text-2xl font-bold my-5">Simplify</h4>
               <p class="mb-5">UI Design & App Development</p>
               <div>
-                <a href="" class="font-bold">Learn More</a>
+                <a href="project.html" class="font-bold">Learn More</a>
               </div>
             </div>
           </div>
@@ -142,7 +142,7 @@
               <h4 class="text-2xl font-bold my-5">Dashcoin</h4>
               <p class="mb-5">Web Development</p>
               <div>
-                <a href="" class="font-bold">Learn More</a>
+                <a href="project.html" class="font-bold">Learn More</a>
               </div>
             </div>
           </div>
@@ -152,7 +152,7 @@
               <h4 class="text-2xl font-bold my-5">Vectorify</h4>
               <p class="mb-5">User Experience Design</p>
               <div>
-                <a href="" class="font-bold">Learn More</a>
+                <a href="project.html" class="font-bold">Learn More</a>
               </div>
             </div>
           </div>
@@ -191,7 +191,7 @@
       </div>
     </section>
     <!--                      -----------Services Section                 -->
-    <section class="services-section mb-60">
+    <section class="services-section mb-60" id="serviceSection">
       <div class="w-4/5 flex flex-col mx-auto">
         <h2 class="standard-title">Our Services</h2>
         <div class="flex gap-9 w-full flex-col md:flex-row">
@@ -244,17 +244,18 @@
           Do you have any questions?
         </h3>
         <p class="mt-5">Let us help you!</p>
-        <form
-          class="w-3/4 md:w-1/2 flex justify-center mx-auto mt-8 gap-5 flex-col md:flex-row"
+        <div class="w-auto mt-8 hidden mx-auto submission-recieved"> <p class="text-sm">Thank you! Your submission has been received!</p></div>
+        <form id="formNewsLetter" 
+          class="w-2/4 md:w-1/2 flex justify-center mx-auto mt-8 gap-5 flex-col md:flex-row" 
         >
           <img src="/assets/img/mail.png" alt="envelope" />
-          <input
-            class="w-3/4 mx-auto md:w-3/5"
-            type="mail"
-            placeholder="Enter your email"
+          <input id="inputNewsLetter"
+            class="w-3/4 mx-auto "
+            type="email"
+            placeholder="Enter your email" required
           />
-          <div class="newsletter-btn w-full md:w-1/4">
-            <button class="w-3/4 md:w-auto">Suscribe</button>
+          <div class="newsletter-btn w-full md:w-1/2">
+            <button name="newsLetterForm" id="btnNewsLetter" class="w-3/4 md:auto" >Suscribe</button>
           </div>
         </form>
       </div>
@@ -276,13 +277,14 @@
         </div>
       </div>
       <ul class="grid grid-cols-3 text-center mt-5 md:mt-auto lg:w-1/3 my-auto">
-        <li class="w-full"><a href="#">Team</a></li>
-        <li class="w-full"><a href="#">Services</a></li>
-        <li class="w-full"><a href="#">About Us</a></li>
-        <li class="w-full"><a href="#">Press</a></li>
-        <li class="w-full"><a href="#">Projects</a></li>
-        <li class="w-full"><a href="#">Privacy Policy</a></li>
+        <li class="w-full mb-5"><a href="#">Team</a></li>
+        <li class="w-full mb-5"><a href="#serviceSection">Services</a></li>
+        <li class="w-full mb-5"><a href="#">About Us</a></li>
+        <li class="w-full mb-5"><a href="#">Press</a></li>
+        <li class="w-full mb-5"><a href="#projectSection">Projects</a></li>
+        <li class="w-full mb-5"><a href="#">Privacy Policy</a></li>
       </ul>
     </footer>
   </body>
+  <script src="js/index.js"></script>
 </html>
