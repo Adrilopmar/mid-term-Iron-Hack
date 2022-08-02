@@ -118,6 +118,11 @@ textarea{
 .input-form:focus-visible , textarea:focus-visible{
 outline: none;
 }
+.submission-recieved{
+    background-color: #dddddd;
+    color: var(--standard-text);
+    padding: 1.2rem;
+}
 
 /* -------------------------------------------footer section styles*/
 footer a{

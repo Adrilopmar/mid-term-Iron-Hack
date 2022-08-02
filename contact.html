@@ -43,13 +43,13 @@
         <h2 class="mb-5 standard-title title-contact text-4xl md:text-6xl">
           Contact Us
         </h2>
-        <form class="" action="none">
+        <form  id="contactForm" class="" >
           <label class="label-contact-form" for="name">Full Name *</label>
           <input
             class="w-full input-form"
             type="text"
-            id="name"
-            placeholder="Enter your full name"
+            id="clientName"
+            placeholder="Enter your full name" required
           />
           <div class="flex md:gap-6 mb-5 flex-col md:flex-row">
             <div class="mail-container flex flex-col md:w-1/2">
@@ -75,11 +75,12 @@
           <textarea
             class="w-full input-form"
             name="clientMessage"
-            id="message"
-            placeholder="Write your message here ..."
+            id="clientMessage"
+            placeholder="Write your message here ..." required minlength="50"
           ></textarea>
-          <button class="w-full mt-5 btn-contact">Submit</button>
+          <button id="contactBtn" class="w-full mt-5 btn-contact">Submit</button>
         </form>
+        <div class="w-auto mt-8 hidden text-center mx-auto submission-recieved"> <p class="text-sm">Thank you! Your submission has been received!</p></div>
       </div>
     </section>
     <footer
@@ -98,13 +99,14 @@
         </div>
       </div>
       <ul class="grid grid-cols-3 text-center mt-5 md:mt-auto lg:w-1/3 my-auto">
-        <li class="w-full"><a href="#">Team</a></li>
-        <li class="w-full"><a href="#">Services</a></li>
-        <li class="w-full"><a href="#">About Us</a></li>
-        <li class="w-full"><a href="#">Press</a></li>
-        <li class="w-full"><a href="#">Projects</a></li>
-        <li class="w-full"><a href="#">Privacy Policy</a></li>
+        <li class="w-full mb-5"><a href="#">Team</a></li>
+        <li class="w-full mb-5"><a href="#">Services</a></li>
+        <li class="w-full mb-5"><a href="#">About Us</a></li>
+        <li class="w-full mb-5"><a href="#">Press</a></li>
+        <li class="w-full mb-5"><a href="#">Projects</a></li>
+        <li class="w-full mb-5"><a href="#">Privacy Policy</a></li>
       </ul>
     </footer>
+    <script src="js/contact.js"></script>
   </body>
 </html>
