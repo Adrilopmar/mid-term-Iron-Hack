@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Circle Clone</title>
+    <!--                       -------link local stylesheet           -->
+    <link rel="stylesheet" href="styles/project.css" />
+    <!--                      --------link tailwind css                -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--                      --------google fonts                     -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <!--                             --------nav bar               -->
+      <div class="nav-container ">
+        <a class="flex" href="index.html">
+          <img
+            class="logo-img my-auto"
+            src="assets/img/circle-Logo.png"
+            alt="circleLogo"
+          />
+        </a>
+        <nav class="nav-links-container my-auto">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Services</a></li>
+          </ul>
+        </nav>
+        <a class="contact-btn" href="contact.html">Contact Us</a>
+      </div>
+    </header>
+    <section class="mt-24">
+      <div class="w-4/5 mx-auto">
+        <h2 class="text-4xl font-bold standard-title mb-5">Simplify</h2>
+        <p class="text-2xl">UI Design & App Development</p>
+        <p class="text-2xl">Completed on
+          2/2/22</p>
+      </div>
+      <div class="w-4/5 mx-auto mt-5 main-project-img mb-12"></div>
+      <div class="project-text mx-auto w-4/5 flex flex-col">
+        <p class="text-xl mt-5 ">Simplify is lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat faucibus sem, id vulputate justo ornare non. Nullam et vehicula sem. Pellentesque bibendum massa non nisl posuere cursus. Aliquam ac eros pretium neque consequat facilisis. Ut sit amet justo varius ex ultrices fringilla. Sed vel turpis fringilla ante gravida vestibulum. Etiam a sollicitudin leo. Nunc metus lectus, lacinia ut arcu quis, pretium congue lacus.</p>
+      <p class="text-xl mt-5">Aliquam blandit varius metus, in mattis orci convallis sit amet. Fusce et sem ac velit placerat ultrices in id dolor. Sed eget auctor metus. Sed suscipit fringilla lectus, a maximus justo bibendum a. Donec et pellentesque nisl, vitae tempus lorem. Sed efficitur cursus rhoncus. Duis placerat nisi quis mi tincidunt, sit amet tincidunt urna convallis. Nam et sagittis felis. Pellentesque placerat orci sodales nisi convallis ultrices. Nunc posuere neque eu mi imperdiet ullamcorper. Praesent tempor convallis rutrum. Vestibulum dignissim pellentesque eros in placerat. Etiam at nisi quis quam sollicitudin vehicula sit amet vel mi.</p>
+      </div>
+      
+    </section>
+    <section id="projectSection" class="mt-12 lg:mt-24 mb-24">
+      <div class="w-4/5 flex flex-col mx-auto">
+        <h2 class="standard-title">Other Projects</h2>
+        <div
+          class="lg:flex justify-center gap-9 grid grid-cols-1 md:grid-cols-2 lg:flex-row"
+        >
+          <div class="card">
+            <img src="/assets/img/Rectangle 1.png" alt="imageSquares" />
+            <div class="card-info">
+              <h4 class="text-2xl font-bold my-5">Simplify</h4>
+              <p class="mb-5">UI Design & App Development</p>
+              <div>
+                <a href="project.html" class="font-bold">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="/assets/img/Rectangle 2.png" alt="imageSquares" />
+            <div class="card-info">
+              <h4 class="text-2xl font-bold my-5">Dashcoin</h4>
+              <p class="mb-5">Web Development</p>
+              <div>
+                <a href="project.html" class="font-bold">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="/assets/img/Rectangle 3.png" alt="imageSquares" />
+            <div class="card-info">
+              <h4 class="text-2xl font-bold my-5">Vectorify</h4>
+              <p class="mb-5">User Experience Design</p>
+              <div>
+                <a href="project.html" class="font-bold">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="newsletter-section">
+      <div class="flex flex-col w-full text-center">
+        <h3 class="newsletter-title mt-36 font-bold text-4xl">
+          Do you have any questions?
+        </h3>
+        <p class="mt-5">Let us help you!</p>
+        <div class="w-auto mt-8 hidden mx-auto submission-recieved"> <p class="text-sm">Thank you! Your submission has been received!</p></div>
+        <form id="formNewsLetter" 
+          class="w-2/4 md:w-1/2 flex justify-center mx-auto mt-8 gap-5 flex-col md:flex-row" 
+        >
+          <img src="/assets/img/mail.png" alt="envelope" />
+          <input id="inputNewsLetter"
+            class="w-3/4 mx-auto "
+            type="email"
+            placeholder="Enter your email" required
+          />
+          <div class="newsletter-btn w-full md:w-1/2">
+            <button name="newsLetterForm" id="btnNewsLetter" class="w-3/4 md:auto" >Suscribe</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <footer class="w-full flex md:justify-around mt-24 mb-24 flex-col md:flex-row justify-center">
+      <div class="w-1/2 mx-auto md:mx-0 md:w-1/2">
+        <img class="w-28 mb-5 flex mx-auto md:mx-0" src="assets/img/circle-Logo.png" alt="logoCircle" />
+        <div class="w-3/4 md:w-1/2 text-center md:text-start flex mx-auto md:mx-0">
+          <p>2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
+        </div>
+      </div>
+      <ul class="grid grid-cols-3 text-center mt-5 md:mt-auto lg:w-1/3 my-auto">
+        <li class="w-full"><a href="#">Team</a></li>
+        <li class="w-full"><a href="#">Services</a></li>
+        <li class="w-full"><a href="#">About Us</a></li>
+        <li class="w-full"><a href="#">Press</a></li>
+        <li class="w-full"><a href="#">Projects</a></li>
+        <li class="w-full"><a href="#">Privacy Policy</a></li>
+      </ul>
+    </footer>
+<script src="js/index.js"></script>
+  </body>
+</html>
