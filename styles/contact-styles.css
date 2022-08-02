@@ -113,7 +113,7 @@ textarea{
     padding: 1.5rem;
 }
 .btn-contact:hover{
-    background-color: #292e47;
+    background-color:var(--dark-bg);
 }
 .input-form:focus-visible , textarea:focus-visible{
 outline: none;

@@ -21,14 +21,14 @@
     <header>
       <!--                             --------nav bar               -->
       <div class="nav-container">
-        <a href="index.html">
+        <a class="flex" href="index.html">
           <img
-            class="logo-img"
+            class="logo-img my-auto"
             src="assets/img/circle-Logo.png"
             alt="circleLogo"
           />
         </a>
-        <nav class="nav-links-container">
+        <nav class="nav-links-container my-auto">
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="#">Projects</a></li>
@@ -40,100 +40,152 @@
     </header>
     <!--                              -----main Section                     -->
     <section>
-      <div class="main-info flex justify-center mx-auto  w-11/12">
-        <div class="main-text my-auto w-2/4">
-          <h1 class="main-title text-6xl mb-12 ml-auto">
+      <div
+        class="main-info flex justify-center mx-auto w-11/12 flex-col lg:flex-row"
+      >
+        <div class="main-text my-auto w-full lg:w-2/4">
+          <h1
+            class="main-title text-5xl mb-12 ml-auto text-center lg:text-start justify-center"
+          >
             Empower Your Business With Stunning Design!
           </h1>
-          <p class="text-2xl">
+          <p class="text-2xl text-center lg:text-start flex">
             Circle is a digital design and development studio. We design and
             develop astonishing websites and mobile apps.
           </p>
 
-          <div class="container-main-link justify-start flex">
-            <a class="my-auto mr-12" href="#">See our work</a>
-            <a class="main-link contact-btn" href="#">Get in touch</a>
+          <div
+            class="container-main-link justify-start flex justify-center lg:justify-start"
+          >
+            <a class="my-auto mr-12 order-2" href="#">See our work</a>
+            <a class="contact-btn lg:order-3 mr-12" href="#">Get in touch</a>
           </div>
         </div>
-        <div class="w-2/4 main-container-img">
-          <img  class="main-card-img w-1/2 main-card-img1" src="assets/img/Card 1.png" alt="">
-          <img  class="main-card-img w-1/2 main-card-img2" src="assets/img/Card 2.png" alt="">
-          <img class="w-full" src="/assets/img/Hero Image.png" alt="happyCostumer" />
+        <div class="w-full lg:w-2/4 main-container-img">
+          <img
+            class="main-card-img w-1/2 main-card-img1 hidden md:block"
+            src="assets/img/Card 1.png"
+            alt=""
+          />
+          <img
+            class="main-card-img w-1/2 main-card-img2 hidden md:block"
+            src="assets/img/Card 2.png"
+            alt=""
+          />
+          <img
+            class="w-full flex my-auto"
+            src="/assets/img/Hero Image.png"
+            alt="happyCostumer"
+          />
         </div>
       </div>
-      <ul class="main-partners-logo flex justify-between mx-auto mt-32 w-4/5">
-        <li><img src="/assets/img/airbnb-logo.svg" alt="airBndBLogo" /></li>
-        <li><img src="/assets/img/google-logo.svg" alt="GoogleLogo" /></li>
+      <ul
+        class="lg:flex L lg:justify-between mx-auto mt-36 w-4/5 lg:flex-row grid grid-cols-2"
+      >
         <li>
-          <img src="/assets/img/microsoft-logo.svg" alt="MicrosoftLogo" />
+          <img
+            class="mx-auto mb-24"
+            src="/assets/img/airbnb-logo.svg"
+            alt="airBndBLogo"
+          />
         </li>
-        <li><img src="/assets/img/fedex-logo.svg" alt="FedExLogo" /></li>
-        <li><img src="/assets/img/amazon-logo.svg" alt="Amazon" /></li>
+        <li>
+          <img
+            class="mx-auto mb-24"
+            src="/assets/img/google-logo.svg"
+            alt="GoogleLogo"
+          />
+        </li>
+        <li>
+          <img
+            class="mx-auto mb-24"
+            src="/assets/img/microsoft-logo.svg"
+            alt="MicrosoftLogo"
+          />
+        </li>
+        <li>
+          <img
+            class="mx-auto mb-24"
+            src="/assets/img/fedex-logo.svg"
+            alt="FedExLogo"
+          />
+        </li>
+        <li>
+          <img
+            class="hidden lg:block mb-24"
+            src="/assets/img/amazon-logo.svg"
+            alt="Amazon"
+          />
+        </li>
       </ul>
     </section>
     <!--                    -------projects section                   -->
-    <section class="projects-section">
+    <section class="mt-12 lg:mt-24">
       <div class="w-4/5 flex flex-col mx-auto">
         <h2 class="standard-title">Recent Projects</h2>
-      <div class="flex justify-center gap-9">
-        <div class="card " >
-          <img src="/assets/img/Rectangle 1.png" alt="imageSquares" />
-          <div class="card-info">
-            <h4 class="text-2xl font-bold my-5">Simplify</h4>
-            <p class="container-card-text mb-5">UI Design & App Development</p>
-            <div>
-              <a href="" class="font-bold ">Learn More</a>
+        <div
+          class="lg:flex justify-center gap-9 grid grid-cols-1 md:grid-cols-2 lg:flex-row"
+        >
+          <div class="card">
+            <img src="/assets/img/Rectangle 1.png" alt="imageSquares" />
+            <div class="card-info">
+              <h4 class="text-2xl font-bold my-5">Simplify</h4>
+              <p class="mb-5">UI Design & App Development</p>
+              <div>
+                <a href="" class="font-bold">Learn More</a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="card ">
-          <img src="/assets/img/Rectangle 2.png" alt="imageSquares" />
-          <div class="card-info">
-            <h4 class="text-2xl font-bold my-5">Dashcoin</h4>
-            <p class="container-card-text mb-5">Web Development</p>
-            <div>
-              <a href="" class="font-bold ">Learn More</a>
+          <div class="card">
+            <img src="/assets/img/Rectangle 2.png" alt="imageSquares" />
+            <div class="card-info">
+              <h4 class="text-2xl font-bold my-5">Dashcoin</h4>
+              <p class="mb-5">Web Development</p>
+              <div>
+                <a href="" class="font-bold">Learn More</a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="card ">
-          <img src="/assets/img/Rectangle 3.png" alt="imageSquares" />
-          <div class="card-info">
-            <h4 class="text-2xl font-bold my-5">Vectorify</h4>
-            <p class="container-card-text mb-5">User Experience Design</p>
-            <div>
-              <a href="" class="font-bold ">Learn More</a>
+          <div class="card">
+            <img src="/assets/img/Rectangle 3.png" alt="imageSquares" />
+            <div class="card-info">
+              <h4 class="text-2xl font-bold my-5">Vectorify</h4>
+              <p class="mb-5">User Experience Design</p>
+              <div>
+                <a href="" class="font-bold">Learn More</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      </div>
-      
-      
     </section>
     <!--              ------------Client opinion section                 -->
     <section class="clients-section w-full">
-      <div class="sticker-face happyGirl1">
+      <div class="sticker-face happyGirl1 hidden md:block">
         <img src="/assets/img/Kim.png" alt="happyGirl1" />
       </div>
-      <div class="sticker-face happyGirl2">
+      <div class="sticker-face happyGirl2 hidden md:block">
         <img src="/assets/img/Angela.png" alt="happyGirl2" />
       </div>
-      <h3 class="client-title text-center text-4xl font-bold mt-24 mb-36">Hear What Our Clients Have to Say</h3>
-      <div class=" text-center justify-center w-full flex">
-        <p  class="text-2xl w-1/2 client-text font-bold">
+      <h3
+        class="client-title text-center text-4xl font-bold mt-24 mb-36 w-1/2 mx-auto"
+      >
+        Hear What Our Clients Have to Say
+      </h3>
+      <div class="text-center justify-center w-full flex">
+        <p class="text-2xl w-1/2 client-text font-bold">
           "Circle helped us through every stage of our startup. We really
           enjoyed working with you."
         </p>
       </div>
-      <div class="sticker-face happyBoy1">
+      <div class="sticker-face happyBoy1 hidden md:block">
         <img src="/assets/img/Mattew.png" alt="happyBoy1" />
       </div>
-      <div class="sticker-face happyBoy2">
+      <div class="sticker-face happyBoy2 hidden md:block">
         <img src="/assets/img/Ed.png" alt="happyBoy2" />
       </div>
       <div>
-        <div class="BookingGirl justify-center flex mt-32">
+        <div class="BookingGirl justify-center flex mt-24">
           <img src="/assets/img/Client's Information.png" alt="BookingGirl" />
         </div>
       </div>
@@ -142,74 +194,88 @@
     <section class="services-section mb-60">
       <div class="w-4/5 flex flex-col mx-auto">
         <h2 class="standard-title">Our Services</h2>
-      <div class="flex gap-9 w-full">
-        <div class="card">
-          <div  class="mb-5">
-            <img src="/assets/img/Group 54 pen.png" alt="appDevelopment" />
+        <div class="flex gap-9 w-full flex-col md:flex-row">
+          <div class="card">
+            <div class="mb-5">
+              <img src="/assets/img/Group 54 pen.png" alt="appDevelopment" />
+            </div>
+            <div class="card-info">
+              <h4 class="font-bold text-2xl mb-5">Application Development</h4>
+              <p class="mb-5">
+                We develop high-quality mobile and web applications using the
+                latest technology stack.
+              </p>
+              <a href="#" class="font-bold">Learn More</a>
+            </div>
           </div>
-          <div class="card-info">
-            <h4 class="font-bold text-2xl mb-5"> Application Development</h4>
-            <p class="container-card-text mb-5">
-              We develop high-quality mobile and web applications using the
-              latest technology stack.
-            </p>
-            <a href="#" class="font-bold">Learn More</a>
+          <div class="card">
+            <div class="mb-5">
+              <img src="/assets/img/Group 54 arrow.png" alt="UXimage" />
+            </div>
+            <div class="card-info">
+              <h4 class="font-bold text-2xl mb-5">User Experience Design</h4>
+              <p class="mb-5">
+                Circle always focuses on delivering the best user experience to
+                your customers.
+              </p>
+              <a href="#" class="font-bold">Learn More</a>
+            </div>
           </div>
-        </div>
-        <div class="card">
-          <div class="mb-5">
-            <img src="/assets/img/Group 54 arrow.png" alt="UXimage" />
-          </div>
-          <div class="card-info">
-            <h4 class="font-bold text-2xl mb-5">User Experience Design</h4>
-            <p class="container-card-text mb-5">
-              Circle always focuses on delivering the best user experience to
-              your customers.
-            </p>
-            <a href="#" class="font-bold">Learn More</a>
-          </div>
-        </div>
-        <div class="card">
-          <div class="mb-5">
-            <img src="/assets/img/Group 54 code.png" alt="UIimage" />
-          </div>
-          <div class="card-info">
-            <h4 class="font-bold text-2xl mb-5">User Interface Design</h4>
-            <p class="container-card-text mb-5">
-              Circle provides you with a stunning user interface design that is
-              accessible to everyone.
-            </p>
-            <a href="#" class="font-bold">Learn More</a>
+          <div class="card">
+            <div class="mb-5">
+              <img src="/assets/img/Group 54 code.png" alt="UIimage" />
+            </div>
+            <div class="card-info">
+              <h4 class="font-bold text-2xl mb-5">User Interface Design</h4>
+              <p class="mb-5">
+                Circle provides you with a stunning user interface design that
+                is accessible to everyone.
+              </p>
+              <a href="#" class="font-bold">Learn More</a>
+            </div>
           </div>
         </div>
       </div>
-      </div>
-      
     </section>
     <!--                ------------news letter section          -->
     <section class="newsletter-section">
       <div class="flex flex-col w-full text-center">
-        <h3 class="newsletter-title mt-36 font-bold text-4xl">Do you have any questions?</h3>
-        <p class="newsletter-text mt-5 ">Let us help you!</p>
-        <form class="w-1/2 flex justify-center mx-auto mt-8 gap-5">
-            <img src="/assets/img/mail.png" alt="envelope" />
-            <input class="w-3/5" type="mail" placeholder="Enter your email"/>
-          <div class="newsletter-btn w-1/4">
-            <button>Suscribe</button>
-
+        <h3 class="newsletter-title mt-36 font-bold text-4xl">
+          Do you have any questions?
+        </h3>
+        <p class="mt-5">Let us help you!</p>
+        <form
+          class="w-3/4 md:w-1/2 flex justify-center mx-auto mt-8 gap-5 flex-col md:flex-row"
+        >
+          <img src="/assets/img/mail.png" alt="envelope" />
+          <input
+            class="w-3/4 mx-auto md:w-3/5"
+            type="mail"
+            placeholder="Enter your email"
+          />
+          <div class="newsletter-btn w-full md:w-1/4">
+            <button class="w-3/4 md:w-auto">Suscribe</button>
           </div>
         </form>
       </div>
     </section>
     <!--                  ------------ footer section -->
-    <footer class="w-full flex justify-around mt-24 mb-24">
-      <div class="w-1/2">
-        <img class="w-28 mb-5" src="assets/img/circle-Logo.png" alt="logoCircle" />
-        <div class="w-2/5">
+    <footer
+      class="w-full flex md:justify-around mt-24 mb-24 flex-col md:flex-row justify-center"
+    >
+      <div class="w-1/2 mx-auto md:mx-0 md:w-1/2">
+        <img
+          class="w-28 mb-5 flex mx-auto md:mx-0"
+          src="assets/img/circle-Logo.png"
+          alt="logoCircle"
+        />
+        <div
+          class="w-3/4 md:w-1/2 text-center md:text-start flex mx-auto md:mx-0"
+        >
           <p>2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
         </div>
       </div>
-      <ul class="grid grid-cols-3 w-1/3">
+      <ul class="grid grid-cols-3 text-center mt-5 md:mt-auto lg:w-1/3 my-auto">
         <li class="w-full"><a href="#">Team</a></li>
         <li class="w-full"><a href="#">Services</a></li>
         <li class="w-full"><a href="#">About Us</a></li>
