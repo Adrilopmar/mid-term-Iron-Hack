@@ -16,11 +16,13 @@
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
     />
+    <!--                      ----------- Font awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
   </head>
   <body>
     <header>
       <!--                             --------nav bar               -->
-      <div class="nav-container">
+      <div class="nav-container hidden">
         <a class="flex" href="index.html">
           <img
             class="logo-img my-auto"
@@ -37,6 +39,31 @@
         </nav>
         <a class="contact-btn" href="contact.html">Contact Us</a>
       </div>
+      <!--                  --------------- Burger Menu -->
+      <div class="container-burger">
+        <div class="burger-nav nav-container">
+          <a class="flex" href="index.html">
+            <img
+              class="logo-img my-auto "
+              src="assets/img/circle-Logo.png"
+              alt="circleLogo"
+            />
+          </a>
+          <div id="openBurger" class="open-burger">
+            <i  class="fa-solid fa-bars"></i>
+          </div>
+          <div class="close-burger">
+            <i  id="close" class="fa-solid fa-xmark close-burger"></i>
+          </div>
+        </div>
+      </div>
+      
+      <ul id="burgerMenuLinks" class="burger-links ">
+        <a href=""><li>Home</li></a>
+        <a href=""><li>Projects</li></a>
+        <a href=""><li>Services</li></a>
+      </ul>
+      
     </header>
     <!--                              -----main Section                     -->
     <section>

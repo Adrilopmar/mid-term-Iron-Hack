@@ -9,6 +9,7 @@
   --dark-bg: #292e47;
   --golden-text: #ffc600;
   --golden-bg: #ffc600;
+  --main-bg:#f2f4fc;
 }
 html {
   scroll-behavior: smooth;
@@ -24,7 +25,7 @@ a {
   color: #6b708d;
 }
 body {
-  background-color: #f2f4fc;
+  background-color: var(--main-bg);
   margin: 0;
 }
 .standard-title {
@@ -43,6 +44,7 @@ body {
   margin-bottom: 0;
   display: flex;
   justify-content: space-between;
+  
 }
 .logo-img {
   width: 60px;
@@ -70,6 +72,56 @@ body {
 .nav-links-container a:current {
   color: #0082f3;
 }
+/* --------------------------------------------- Burger Menu*/
+.container-burger{
+  background-color: var(--main-bg);
+  padding-top: 20px;
+}
+.burger-nav{
+  display: flex;
+  justify-content: space-between;
+}
+.open-burger i, .close-burger i{
+  font-size: 28px;
+  font-weight: bolder;
+  color:var(--main-title) ;
+  padding: 15px 20px;
+  height: 100%;
+  background-color: #C8C8C8;
+}
+.close-burger{
+  /* display: none; */
+}
+.burger-links{
+  width: 100%;
+  position: absolute;
+  z-index: -99;
+  display: none;
+  background-color: #C8C8C8;
+}
+
+@keyframes slideDown {
+  0% {
+      
+      transform:translateY(-100px);
+  }
+  100% {
+      
+      transform:translateY();
+  }
+}
+@keyframes slideUp {
+  0% {
+    transform:translateY();
+      
+  }
+  100% {
+    
+    transform:translateY(-100px);
+  }
+}
+
+
 /* --------------------------------------------- main section information*/
 .main-info {
   padding: 100px 70px 0 70px;
