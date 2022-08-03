@@ -4,6 +4,9 @@ const regexEmail = `^[a-z0-9!#$%&'*+/=?^_{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_{|}~-]+
 // js for newsletter section in index.html
 const newsLetterBtn = document.getElementById("btnNewsLetter");
 const openBurger = document.getElementById('openBurger')
+const closeBurger = document.getElementById('closeBurger')
+
+
 let menuOpen = false
 // function for newsletter section loading letter and feedback to user
 newsLetterBtn.addEventListener("click", (event) =>{
@@ -19,15 +22,26 @@ newsLetterBtn.addEventListener("click", (event) =>{
 });
 
 
-openBurger.addEventListener('click',() =>{
+openBurger.addEventListener('click',toggleBurgerMenu)
+closeBurger.addEventListener('click',toggleBurgerMenu)
+
+function toggleBurgerMenu(){
   if(!menuOpen){
+    menuOpen = !menuOpen
     document.getElementById('burgerMenuLinks').style.display ='block'
-    document.getElementById('burgerMenuLinks').style.animation= 'slideDown .5s'
-    menuOpen = !menuOpen
+    document.getElementById('burgerMenuLinks').style.animation= 'slideDown .3s'
+    document.getElementById('closeBurger').style.display ='block'
+    document.getElementById('openBurger').style.display ='none'
   }else if(menuOpen){
-    document.getElementById('burgerMenuLinks').style.animation= 'slideUp .5s'
     menuOpen = !menuOpen
+    document.getElementById('closeBurger').style.display ='none'
+    document.getElementById('openBurger').style.display ='block'
+    document.getElementById('burgerMenuLinks').style.animation= 'slideUp .3s'
+    setTimeout(()=>{
+      document.getElementById('burgerMenuLinks').style.display ='none'
+    },200)
   }
-})
+
+}
 
 

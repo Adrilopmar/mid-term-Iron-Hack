@@ -66,7 +66,7 @@ body {
   background-color: var(--standard-link);
 }
 /* --------------------------------------------- nav pseudo selectors*/
-.nav-links-container a:hover {
+.nav-links-container a:hover, .burger-links li:hover {
   color: var(--standard-link);
 }
 .nav-links-container a:current {
@@ -76,6 +76,8 @@ body {
 .container-burger{
   background-color: var(--main-bg);
   padding-top: 20px;
+  z-index: 2;
+  position: relative;
 }
 .burger-nav{
   display: flex;
@@ -90,20 +92,30 @@ body {
   background-color: #C8C8C8;
 }
 .close-burger{
-  /* display: none; */
+  display: none;
+}
+.close-burger i{
+  
+  color: var(--light-text);
 }
 .burger-links{
   width: 100%;
   position: absolute;
-  z-index: -99;
+  z-index: 1;
   display: none;
   background-color: #C8C8C8;
 }
-
+.burger-links a li{
+  font-size: 1.2rem;
+  padding: 10px;
+  margin-left: 50px;
+  font-weight: bold;
+}
+/*          ------------------- keyframe for toggle animations burger menu */
 @keyframes slideDown {
   0% {
       
-      transform:translateY(-100px);
+      transform:translateY(-150px);
   }
   100% {
       
@@ -117,7 +129,7 @@ body {
   }
   100% {
     
-    transform:translateY(-100px);
+    transform:translateY(-150px);
   }
 }
 
@@ -263,6 +275,8 @@ footer a {
   color: var();
 }
 
+/*              ------------------------- Media queries to responsiveness */
+
 @media (max-width: 500px) {
   .container-main-link {
     flex-direction: column;
@@ -285,3 +299,14 @@ footer a {
     left: 20%;
   }
 }
+@media (min-width: 1024px){
+  .container-burger{
+    display: none;
+  }
+}
+@media (max-width: 1024px){
+  .full-navbar{
+    display: none;
+  }
+}
+
