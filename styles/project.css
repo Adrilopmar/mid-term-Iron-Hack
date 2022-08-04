@@ -7,6 +7,7 @@
     --dark-bg:#292e47;
     --golden-text:#ffc600;
     --golden-bg:#ffc600;
+    --main-bg:#f2f4fc;
 }
 
 
@@ -92,10 +93,72 @@ font-size: 1rem;
     color: var(--light-text);
     background-color:var(--standard-link) ;
 }
+/* --------------------------------------------- Burger Menu*/
+.container-burger{
+  background-color: var(--main-bg);
+  padding-top: 20px;
+  z-index: 2;
+  position: relative;
+}
+.burger-nav{
+  display: flex;
+  justify-content: space-between;
+}
+.open-burger i, .close-burger i{
+  font-size: 28px;
+  font-weight: bolder;
+  color:var(--main-title) ;
+  padding: 15px 20px;
+  height: 100%;
+  background-color: #C8C8C8;
+  cursor: pointer;
+}
+.close-burger{
+  display: none;
+}
+.close-burger i{
+  
+  color: var(--light-text);
+}
+.burger-links{
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  display: none;
+  background-color: #C8C8C8;
+}
+.burger-links a li{
+  font-size: 1.2rem;
+  padding: 10px;
+  margin-left: 50px;
+  font-weight: bold;
+}
+/*          ------------------- keyframe for toggle animations burger menu */
+@keyframes slideDown {
+  0% {
+      
+      transform:translateY(-150px);
+  }
+  100% {
+      
+      transform:translateY();
+  }
+}
+@keyframes slideUp {
+  0% {
+    transform:translateY();
+      
+  }
+  100% {
+    
+    transform:translateY(-150px);
+  }
+}
+
 /*                                       ------------project page styles */
 .main-project-img{
     min-height: 450px;
-    background-image: url(/assets/img/Rectangle\ 1.png) ;
+    background-image: url(/assets/img/Rectangle\ 4.jpeg) ;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -181,5 +244,15 @@ form > input {
 @media (max-width: 768px) {
     form > img {
       left: 20%;
+    }
+  }
+  @media (min-width: 1024px){
+    .container-burger{
+      display: none;
+    }
+  }
+  @media (max-width: 1024px){
+    .full-navbar{
+      display: none;
     }
   }
