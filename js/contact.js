@@ -24,44 +24,45 @@ function toggleBurgerMenu() {
   }
 }
 
+function postClientNeeds(e) {
+  e.preventDefault();
+  const clientName = document.getElementById("clientName").value;
+  const clientEmail = document.getElementById("clientEmail").value;
+  const clientPhone = document.getElementById("clientPhone").value;
+  const clientMessage = document.getElementById("clientMessage").value;
 
-function postClientNeeds(e){
-  e.preventDefault()
-const clientName = document.getElementById('clientName').value
-const clientEmail = document.getElementById('clientEmail').value
-const clientPhone = document.getElementById('clientPhone').value
-const clientMessage = document.getElementById('clientMessage').value
-
-fetch('https://jsonplaceholder.typicode.com/posts',{
-  method:'POST',
-  headers:{
-    Accept: 'text/plain, application/json, */*',
-    "Content-type":"application/json",
-  },
-  body:JSON.stringify({name:clientName, email:clientEmail, phone:clientPhone ,message:clientMessage}),
-}).then((res)=>res.json()).then((formData)=>console.log(formData))
-
-
+  fetch("https://jsonplaceholder.typicode.com/posts", {
+    method: "POST",
+    headers: {
+      Accept: "text/plain, application/json, */*",
+      "Content-type": "application/json",
+    },
+    body: JSON.stringify({
+      name: clientName,
+      email: clientEmail,
+      phone: clientPhone,
+      message: clientMessage,
+    }),
+  })
+    .then((res) => res.json())
+    .then((formData) => console.log(formData));
 }
 
 // function for contact form page loading letter and feedback to user
 
-const contactFormBtn = document.getElementById('contactBtn');
+const contactFormBtn = document.getElementById("contactBtn");
 
-contactFormBtn.addEventListener("click", (event)=>{
+contactFormBtn.addEventListener("click", (event) => {
+  const nameClient = document.getElementById("clientName").value;
+  const clientMessage = document.getElementById("clientMessage").value;
 
-    postClientNeeds(event)
-    const nameClient = document.getElementById('clientName').value
-    const clientMessage = document.getElementById('clientMessage').value
-    
-    if(nameClient != '' && clientMessage.length >=50){
-      event.preventDefault()
-    contactFormBtn.innerHTML='Please wait ...';
-    setTimeout(()=>{
-      document.getElementById('contactForm').classList.add('hidden');      document.querySelector(".submission-recieved").classList.remove("hidden");
-
-    },1000)
+  if (nameClient != "" && clientMessage.length >= 50) {
+    postClientNeeds(event);
+    event.preventDefault();
+    contactFormBtn.innerHTML = "Please wait ...";
+    setTimeout(() => {
+      document.getElementById("contactForm").classList.add("hidden");
+      document.querySelector(".submission-recieved").classList.remove("hidden");
+    }, 1000);
   }
-
-})
-
+});
